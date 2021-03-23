@@ -82,6 +82,7 @@ spec:
     app: proxy-rest-api
   ports:
     - name: api-port
-      port:  8080
+      port:  80
       targetPort: 80
-  type: LoadBalancer
+      nodePort: 1346
+  type: NodePort
